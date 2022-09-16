@@ -106,13 +106,37 @@
 //// somma numeri dispari
 //Console.WriteLine();
 
+//int somma = 0;
+//int[] ints = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+//foreach (int i in ints)
+//{
+//    if (i % 2 == 1)
+//    {
+//        somma += i;
+//    }
+//}
+//Console.WriteLine(somma);
+
+
+//Console.WriteLine("Snack 9");
+//// somma fino a 50 numeri dispari
+//Console.WriteLine();
+
+Console.WriteLine("Inseri sino a quando non superi 50");
 int somma = 0;
-int[] ints = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-foreach (int i in ints)
+string array = "";
+do
 {
-    if (i % 2 == 1)
-    {
-        somma += i;
-    }
+    Console.Write("Inserisci un numero intero");
+    string numero = Console.ReadLine();
+    array += numero + ",";
+    somma += Convert.ToInt32(numero);
+
+} while (somma<50);
+
+string[] arrayString = array.Split(",");
+int[] arrayNum = new int[arrayString.Length];
+for (int i = 0; i < arrayString.Length; i++)
+{
+    arrayNum[i] = Convert.ToInt32(arrayString[i]);
 }
-Console.WriteLine(somma);
