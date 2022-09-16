@@ -90,14 +90,29 @@
 //// Array di dispari
 //Console.WriteLine();
 
-int[] ints = new int[6];
-for (int i = 0; i < ints.Length; i++)
+//int[] ints = new int[6];
+//for (int i = 0; i < ints.Length; i++)
+//{
+//    Console.Write("Inserisci numero Intero ");
+//    int num = Convert.ToInt32(Console.ReadLine());
+//    if (num % 2 == 1)
+//    {
+//        ints[i] = num;
+//    }
+//}
+
+
+//Console.WriteLine("Snack 8");
+//// somma numeri dispari
+//Console.WriteLine();
+
+int somma = 0;
+int[] ints = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+foreach (int i in ints)
 {
-    Console.Write("Inserisci numero Intero");
-    int num = Convert.ToInt32(Console.ReadLine());
-    if (num % 2 == 1)
+    if (i % 2 == 1)
     {
-        ints[i] = num;
+        somma += i;
     }
 }
-
+Console.WriteLine(somma);
