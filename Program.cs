@@ -142,12 +142,23 @@
 //}
 
 
-//Console.WriteLine("Snack 10");
-//// Random
-//Console.WriteLine();
+Console.WriteLine("Snack 10");
+// Random
+Console.WriteLine();
 
 
-//Console.Write("Inseriesci il numero di array che vuoi visualizzare");
-//int num = Convert.ToInt32(Console.ReadLine());
+Console.Write("Inseriesci il numero di array che vuoi visualizzare ");
+int num = Convert.ToInt32(Console.ReadLine());
+Random rnd = new Random();
 
+for (int i = 0; i < num; i++)
+{
+    Console.Write($"{i+1} Array [");
+    for (int j = 0; j < 10; j++)
+    {
+        Console.Write($" {rnd.Next(1,100)} ");
+    }
+    Console.WriteLine("]");
+
+}
 
