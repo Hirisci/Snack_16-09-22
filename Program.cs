@@ -122,21 +122,32 @@
 //// somma fino a 50 numeri dispari
 //Console.WriteLine();
 
-Console.WriteLine("Inseri sino a quando non superi 50");
-int somma = 0;
-string array = "";
-do
-{
-    Console.Write("Inserisci un numero intero");
-    string numero = Console.ReadLine();
-    array += numero + ",";
-    somma += Convert.ToInt32(numero);
+//Console.WriteLine("Inseri sino a quando non superi 50");
+//int somma = 0;
+//string array = "";
+//do
+//{
+//    Console.Write("Inserisci un numero intero");
+//    string numero = Console.ReadLine();
+//    array += numero + ",";
+//    somma += Convert.ToInt32(numero);
 
-} while (somma<50);
+//} while (somma < 50);
 
-string[] arrayString = array.Split(",");
-int[] arrayNum = new int[arrayString.Length];
-for (int i = 0; i < arrayString.Length; i++)
-{
-    arrayNum[i] = Convert.ToInt32(arrayString[i]);
-}
+//string[] arrayString = array.Split(",");
+//int[] arrayNum = new int[arrayString.Length];
+//for (int i = 0; i < arrayString.Length; i++)
+//{
+//    arrayNum[i] = Convert.ToInt32(arrayString[i]);
+//}
+
+
+//Console.WriteLine("Snack 10");
+//// Random
+//Console.WriteLine();
+
+
+//Console.Write("Inseriesci il numero di array che vuoi visualizzare");
+//int num = Convert.ToInt32(Console.ReadLine());
+
+
