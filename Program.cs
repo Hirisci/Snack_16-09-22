@@ -40,17 +40,49 @@
 //Console.WriteLine($"La somma dei numeri inseriti é: {somma}");
 
 
-Console.WriteLine("Snack 4");
-// somma e media da 2 a 10
+//Console.WriteLine("Snack 4");
+//// somma e media da 2 a 10
+//Console.WriteLine();
+
+//int somma = 0;
+//int numeri= 0
+//for (int i = 2; i <= 10; i++)
+//{
+//    somma+= i;
+//    numeri++;
+//}
+//Console.WriteLine($"La somma dei numeri da 2 a 10 é {somma}");
+//Console.WriteLine($"La somma dei numeri da 2 a 10 é {somma/numeri}");
+
+
+//Console.WriteLine("Snack 5");
+//// Pari o Successivo
+//Console.WriteLine();
+
+//Console.Write("Inserisci Primo numero: ");
+//int numA = Convert.ToInt32(Console.ReadLine());
+//if (numA% 2 == 0)
+//{
+//    Console.WriteLine(numA);
+//}
+//else
+//{
+//    Console.WriteLine(++numA);
+//};
+
+
+Console.WriteLine("Snack 6");
+// Grande Gasby
 Console.WriteLine();
 
-int somma = 0;
-int numeri= 0
-for (int i = 2; i <= 10; i++)
+Console.WriteLine("Nome");
+string nome= Console.ReadLine();
+string[] array = { "franco", "angelo", "michele" };
+for (int i = 0; i < array.Length; i++)
 {
-    somma+= i;
-    numeri++;
+    if (array[i] == nome.ToLower())
+    {
+        Console.WriteLine($"{nome} - sei in lista ");
+    }
 }
-Console.WriteLine($"La somma dei numeri da 2 a 10 é {somma}");
-Console.WriteLine($"La somma dei numeri da 2 a 10 é {somma/numeri}");
 
