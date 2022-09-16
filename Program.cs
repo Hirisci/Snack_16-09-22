@@ -71,18 +71,33 @@
 //};
 
 
-Console.WriteLine("Snack 6");
-// Grande Gasby
-Console.WriteLine();
+//Console.WriteLine("Snack 6");
+//// Grande Gasby
+//Console.WriteLine();
 
-Console.WriteLine("Nome");
-string nome= Console.ReadLine();
-string[] array = { "franco", "angelo", "michele" };
-for (int i = 0; i < array.Length; i++)
+//Console.WriteLine("Nome");
+//string nome= Console.ReadLine();
+//string[] array = { "franco", "angelo", "michele" };
+//for (int i = 0; i < array.Length; i++)
+//{
+//    if (array[i] == nome.ToLower())
+//    {
+//        Console.WriteLine($"{nome} - sei in lista ");
+//    }
+//}
+
+//Console.WriteLine("Snack 7");
+//// Array di dispari
+//Console.WriteLine();
+
+int[] ints = new int[6];
+for (int i = 0; i < ints.Length; i++)
 {
-    if (array[i] == nome.ToLower())
+    Console.Write("Inserisci numero Intero");
+    int num = Convert.ToInt32(Console.ReadLine());
+    if (num % 2 == 1)
     {
-        Console.WriteLine($"{nome} - sei in lista ");
+        ints[i] = num;
     }
 }
 
